@@ -1,0 +1,22 @@
+name       : mpc
+version    : 1.0.2
+release    : 1
+homepage   : http://multiprecision.org/
+source     :
+    - http://ftp.gnu.org/gnu/mpc/mpc-1.0.2.tar.gz : b561f54d8a479cee3bc891ee52735f18ff86712ba30f036f8b8537bae380c488
+license    : GPL-2.0
+summary    : The MPC package contains a library for the arithmetic of complex numbers with arbitrarily high precision and correct rounding of the result.
+emul32     : yes
+builddeps  :
+    - gmp-devel
+    - gmp-32bit
+    - mpfr-devel
+    - mpfr-32bit
+description: |
+    The MPC package contains a library for the arithmetic of complex numbers with arbitrarily high precision and correct rounding of the result.
+setup      : |
+    %configure --disable-static
+build      : |
+    %make
+install    : |
+    %make_install
