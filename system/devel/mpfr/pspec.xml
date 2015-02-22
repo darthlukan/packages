@@ -1,0 +1,72 @@
+<PISI>
+    <Source>
+        <Name>mpfr</Name>
+        <Homepage>http://www.mpfr.org</Homepage>
+        <Packager>
+            <Name>Ikey Doherty</Name>
+            <Email>ikey@evolve-os.com</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <Summary xml:lang="en">The MPFR package contains functions for multiple precision math.</Summary>
+        <Description xml:lang="en">The MPFR package contains functions for multiple precision math.
+</Description>
+        <Archive type="binary" sha1sum="083029a13c0c475bf42a4232c68a9caa6dbc763e">https://evolve-os.com/sources/README</Archive>
+    </Source>
+    <Package>
+        <Name>mpfr-32bit</Name>
+        <Summary xml:lang="en">32-bit libraries for mpfr</Summary>
+        <Description xml:lang="en">The MPFR package contains functions for multiple precision math.
+</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">mpfr</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32/lib*.so.*</Path>
+            <Path fileType="library">/usr/lib32/lib*.so</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>mpfr-devel</Name>
+        <Summary xml:lang="en">Development files for mpfr</Summary>
+        <Description xml:lang="en">The MPFR package contains functions for multiple precision math.
+</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">mpfr</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>mpfr</Name>
+        <Summary xml:lang="en">The MPFR package contains functions for multiple precision math.</Summary>
+        <Description xml:lang="en">The MPFR package contains functions for multiple precision math.
+</Description>
+        <Files>
+            <Path fileType="doc">/usr/share/doc/TODO</Path>
+            <Path fileType="doc">/usr/share/doc/AUTHORS</Path>
+            <Path fileType="doc">/usr/share/doc/FAQ.html</Path>
+            <Path fileType="doc">/usr/share/doc/NEWS</Path>
+            <Path fileType="doc">/usr/share/doc/COPYING.LESSER</Path>
+            <Path fileType="doc">/usr/share/doc/BUGS</Path>
+            <Path fileType="doc">/usr/share/doc/COPYING</Path>
+            <Path fileType="doc">/usr/share/doc/examples/version.c</Path>
+            <Path fileType="doc">/usr/share/doc/examples/ReadMe</Path>
+            <Path fileType="doc">/usr/share/doc/examples/sample.c</Path>
+            <Path fileType="doc">/usr/share/doc/examples/rndo-add.c</Path>
+            <Path fileType="doc">/usr/share/doc/examples/divworst.c</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2015-02-22</Date>
+            <Version>3.1.2</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Ikey Doherty</Name>
+            <Email>ikey@evolve-os.com</Email>
+        </Update>
+    </History>
+</PISI>
