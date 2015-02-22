@@ -1,0 +1,61 @@
+<PISI>
+    <Source>
+        <Name>gmp</Name>
+        <Homepage>http://gnu.org</Homepage>
+        <Packager>
+            <Name>Ikey Doherty</Name>
+            <Email>ikey@evolve-os.com</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <Summary xml:lang="en">The GMP package contains math libraries. These have useful functions for arbitrary precision arithmetic</Summary>
+        <Description xml:lang="en">The GMP package contains math libraries. These have useful functions for arbitrary precision arithmetic
+</Description>
+        <Archive type="binary" sha1sum="083029a13c0c475bf42a4232c68a9caa6dbc763e">https://evolve-os.com/sources/README</Archive>
+    </Source>
+    <Package>
+        <Name>gmp</Name>
+        <Summary xml:lang="en">The GMP package contains math libraries. These have useful functions for arbitrary precision arithmetic</Summary>
+        <Description xml:lang="en">The GMP package contains math libraries. These have useful functions for arbitrary precision arithmetic
+</Description>
+        <Files>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+            <Path fileType="data">/emul32/include/gmp.h</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>gmp-devel</Name>
+        <Summary xml:lang="en">Development files for gmp</Summary>
+        <Description xml:lang="en">The GMP package contains math libraries. These have useful functions for arbitrary precision arithmetic
+</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">gmp</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>gmp-32bit</Name>
+        <Summary xml:lang="en">32-bit libraries for gmp</Summary>
+        <Description xml:lang="en">The GMP package contains math libraries. These have useful functions for arbitrary precision arithmetic
+</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">gmp</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32/lib*.so.*</Path>
+            <Path fileType="library">/usr/lib32/lib*.so</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2015-02-22</Date>
+            <Version>6.0.0a</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Ikey Doherty</Name>
+            <Email>ikey@evolve-os.com</Email>
+        </Update>
+    </History>
+</PISI>
