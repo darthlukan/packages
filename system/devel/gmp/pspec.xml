@@ -20,7 +20,6 @@
         <Files>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="library">/usr/lib64/lib*.so.*</Path>
-            <Path fileType="data">/emul32/include/gmp.h</Path>
         </Files>
     </Package>
     <Package>
@@ -50,7 +49,7 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2015-02-22</Date>
             <Version>6.0.0a</Version>
             <Comment>Packaging update</Comment>
