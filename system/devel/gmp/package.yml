@@ -7,6 +7,7 @@ source     :
 license    : GPL-2.0
 summary    : The GMP package contains math libraries. These have useful functions for arbitrary precision arithmetic
 emul32     : yes
+devel      : yes
 description: |
     The GMP package contains math libraries. These have useful functions for arbitrary precision arithmetic
 setup      : |
